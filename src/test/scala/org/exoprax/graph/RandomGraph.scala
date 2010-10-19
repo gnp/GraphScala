@@ -18,13 +18,15 @@
 package org.exoprax.graph
 
 import java.util.Random;
+import org.testng.annotations.Test
 
-object RandomGraph {
+class RandomGraph {
   
   val N = 20000
   val P = 0.00019
   
-  def main(args : Array[String]) : Unit = {
+  @Test
+  def testRandom() : Unit = {
     val g = Graph(N, P)
     
 //    println(g.edges)
