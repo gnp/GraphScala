@@ -2,15 +2,6 @@
 
 GraphScala contains code you can use to construct graphs.
 
-I have used this to validate what people told me about what was *supposedly* in the
-data set they were going to have me depend on. I would get the data file from them
-and run this and then ask them all the follow up questions like "wait, what does
-it mean when the order_date field contains the text 'X' instead of a date?".
-
-Here's a simple example code fragment from one of the unit tests. It sets up an
-input source to read from a tab-separated values text stream and outputs the assay
-results to the console:
-
     import org.exoprax.graph.Graph2._
     
     val triple = 1 -- 2 -> 3 // Represents an edge from Node 1 to Node 3 with annotation 2
